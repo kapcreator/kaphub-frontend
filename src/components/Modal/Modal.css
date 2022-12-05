@@ -1,0 +1,36 @@
+.modal-box {
+  background-color: white;
+  min-width: 250px;
+  min-height: 125px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: var(--z-index-modal);
+}
+
+.modal-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.25);
+  z-index: calc(var(--z-index-modal) - 1);
+}
+
+.modal-box__text {
+  flex-grow: 1;
+}
+
+.modal-box__btns {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 0.25rem;
+}

@@ -1,0 +1,31 @@
+.dashboard {
+  padding: 1.25rem;
+}
+
+.dashboard__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+}
+
+.dashboard__item {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 5px;
+  background-color: white;
+  padding: 1.25rem;
+  width: 50%;
+  cursor: pointer;
+}
+
+.dashboard__item-title {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard__item {
+    width: 100%;
+  }
+}

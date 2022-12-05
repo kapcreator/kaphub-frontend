@@ -1,0 +1,15 @@
+.search {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  background-color: white;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+}
+
+.search input {
+  height: 28px;
+  background-color: transparent;
+  border: none;
+}
